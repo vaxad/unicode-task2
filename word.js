@@ -1,7 +1,7 @@
 const express=require('express')
 const router=express.Router();
 const middleware = require('./middleware');
-
+const fetch=require('node-fetch')
 
 router.post('/',middleware,async(req,res)=>{
     const {word}=req.body
